@@ -23,10 +23,10 @@ class MainActivity : ComponentActivity() {
                 NavHost(navController = navController, startDestination = NavDestination.Hal1)
                 {
                     composable(NavDestination.Hal1) {
-                        Hal1(onNavigateToHal2 = { navController.navigate(NavDestination.Hal1) })
+                        Hal1(onNavigateToHal2 = { navController.navigate(NavDestination.Hal2) })
                     }
                     composable(NavDestination.Hal2) {
-                        Hal2(onNavigateToHal1 = { navController.navigate(NavDestination.Hal2) })
+                        Hal2(onNavigateToHal1 = { navController.navigate(NavDestination.Hal1) })
                     }
                 }
             }
