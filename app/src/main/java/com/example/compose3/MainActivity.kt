@@ -9,8 +9,8 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.example.compose3.screen.Hal1
-import com.example.compose3.screen.Hal2
+import com.example.compose3.screen.Hal1Screen
+import com.example.compose3.screen.Hal2Screen
 import com.example.compose3.ui.theme.Compose3Theme
 
 class MainActivity : ComponentActivity() {
@@ -23,10 +23,10 @@ class MainActivity : ComponentActivity() {
                 NavHost(navController = navController, startDestination = NavDestination.Hal1)
                 {
                     composable(NavDestination.Hal1) {
-                        Hal1(onNavigateToHal2 = { navController.navigate(NavDestination.Hal2) })
+                        Hal1Screen(onNavigateToHal2 = { navController.navigate(NavDestination.Hal2) })
                     }
                     composable(NavDestination.Hal2) {
-                        Hal2(onNavigateToHal1 = { navController.navigate(NavDestination.Hal1) })
+                        Hal2Screen(onNavigateToHal1 = { navController.navigate(NavDestination.Hal1) })
                     }
                 }
             }

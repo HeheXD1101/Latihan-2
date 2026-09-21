@@ -15,7 +15,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 
 @Composable
-fun Hal2(onNavigateToHal1: () -> Unit) {
+fun Hal2Screen(onNavigateToHal1: () -> Unit) {
     Column (
         modifier = Modifier
             .fillMaxSize()
@@ -31,6 +31,6 @@ fun Hal2(onNavigateToHal1: () -> Unit) {
 
 @Preview
 @Composable
-fun PreviewHal2() {
-    Hal2(onNavigateToHal1 = {})
+fun PreviewHal2Screen() {
+    Hal2Screen(onNavigateToHal1 = {})
 }
