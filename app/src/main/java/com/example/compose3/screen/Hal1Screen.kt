@@ -7,6 +7,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.material3.Button
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -23,6 +24,9 @@ fun Hal1Screen(onNavigateToHal2: () -> Unit) {
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center
     ) {
+        Text(text = "NIM: [NIM Placeholder]", style = MaterialTheme.typography.titleMedium)
+        Text(text = "Nama: [Nama Placeholder]", style = MaterialTheme.typography.titleMedium)
+        Spacer(modifier = Modifier.size(20.dp))
         Text(text = "Screen 1")
         Spacer(modifier = Modifier.size(10.dp))
         Button (onClick = onNavigateToHal2) { Text("Ke halaman 2") }
