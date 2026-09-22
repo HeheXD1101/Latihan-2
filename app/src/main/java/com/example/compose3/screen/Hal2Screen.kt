@@ -25,8 +25,8 @@ fun Hal2Screen(onNavigateToHal1: () -> Unit) {
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center
     ) {
-        Text(text = "NIM: [NIM Placeholder]", style = MaterialTheme.typography.titleMedium)
-        Text(text = "Nama: [Nama Placeholder]", style = MaterialTheme.typography.titleMedium)
+        Text(text = "NIM: 245150407111037", style = MaterialTheme.typography.titleMedium)
+        Text(text = "Nama: Muhammad Murfid Kharomen", style = MaterialTheme.typography.titleMedium)
         Spacer(modifier = Modifier.size(20.dp))
         Text(text = "Screen 2")
         Spacer(modifier = Modifier.size(10.dp))
