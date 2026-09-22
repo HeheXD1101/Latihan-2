@@ -19,7 +19,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             Compose3Theme {
-                val navController = rememberNavController()
+                // val navController = rememberNavController()
                 NavHost(navController = navController, startDestination = NavDestination.Hal1)
                 {
                     composable(NavDestination.Hal1) {
