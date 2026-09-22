@@ -23,9 +23,9 @@ fun Hal2Screen(onNavigateToHal1: () -> Unit) {
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center
     ) {
-        Text(text = "Halaman 2")
+        Text(text = "Screen 2")
         Spacer(modifier = Modifier.size(10.dp))
-        Button (onClick = onNavigateToHal1) { Text("BACK") }
+        Button (onClick = onNavigateToHal1) { Text("Ke halaman 1") }
     }
 }
 
